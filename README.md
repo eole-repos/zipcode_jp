@@ -51,3 +51,5 @@ MIT
 
 ## Thanks
 zipcode_jp uses x-ken-all.csv provided by [zipcloud](http://zipcloud.ibsnet.co.jp/).
+
+test
