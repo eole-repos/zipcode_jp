@@ -1,4 +1,4 @@
-export BRANCH=update-data-`date -u "+%Y%m%d"`
+export BRANCH=update-data-`date -u "+%Y%m%d-%H%M%S"`
 git status -s 2> /dev/null | grep x-ken-all.csv
 if [ "$?" -eq 0 ] ; then
   echo x-ken-all.csv changed
