@@ -19,7 +19,7 @@ workflows:
     triggers:
       - schedule:
           #cron: "0 15 * * *"
-          cron: "12 5 * * *"
+          cron: "21 5 * * *"
           filters:
             branches:
               only:
