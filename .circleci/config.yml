@@ -9,8 +9,8 @@ jobs:
           fingerprints:
           - 'dd:0a:d9:88:63:0f:ea:b0:39:f8:fb:e7:c5:41:eb:31'
       - checkout
-      - run: bundle install
-      - run: bundle update octokit 
+      #- run: bundle install
+      #- run: bundle update octokit
       - run: bundle exec ruby scripts/update_data.rb
       - run: bash scripts/create_pull_request_if_needed.sh
 
