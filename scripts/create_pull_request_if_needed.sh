@@ -6,10 +6,11 @@ if [ "$?" -eq 0 ] ; then
   git config --global user.name 'CircleCI'
   git add docs
   git commit -a -m 'Update data'
-  git branch -M $BRANCH
+  #git branch -M $BRANCH
   #git push origin $BRANCH
   git push origin master
-  bundle exec ruby scripts/create_pull_request.rb
+  git branch -M $BRANCH
+  #bundle exec ruby scripts/create_pull_request.rb
 else
   echo x-ken-all.csv not changed
 fi
